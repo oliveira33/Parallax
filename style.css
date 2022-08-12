@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1c0522;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 80%;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav button {
+    padding: 5px 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+}
+
+nav button:hover, nav button:first-child {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container-parallax {
+    position: relative;
+    height: 100vh;
+}
+
+.layer {
+    overflow: hidden;
+}
+
+.first-layer {
+    z-index: -4;
+}
+
+.second-layer {
+    z-index: -2;
+}
+
+.third-layer {
+    z-index: -1;
+}
+
+.layer img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    z-index: -1;
+}
+
+.content {
+    color: white;
+    padding: 50px 100px;
+    background-color: #1c0522;
+}
+
+.content p {
+    margin: 25px 0 45px 0;
+}
+
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
